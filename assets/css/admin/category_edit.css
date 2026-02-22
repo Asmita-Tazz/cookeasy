@@ -1,0 +1,95 @@
+    
+        :root { --orange: #e67e45; 
+        --bg: #fdfdfd; 
+    }
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background: var(--bg); 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            margin: 0; 
+        }
+        .edit-container { 
+            background: white; 
+            padding: 40px; 
+            border-radius: 30px; 
+            box-shadow: 0 15px 50px rgba(0,0,0,0.05); 
+            width: 100%; 
+            max-width: 500px; 
+            border: 1px solid #f0f0f0; 
+        }
+        h2 { 
+            color: var(--orange); 
+            font-family: 'Playfair Display', serif; 
+            font-size: 2rem; 
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        label { 
+            display: block; 
+            color: var(--orange); 
+            font-weight: 700; 
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+        input[type="text"], textarea { 
+            width: 100%; 
+            padding: 15px; 
+            margin-bottom: 20px; 
+            border: 1.5px solid #f0f0f0; 
+            border-radius: 12px; 
+            box-sizing: border-box; 
+            font-family: inherit;
+            transition: 0.3s;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--orange);
+            background: #fffcfb;
+        }
+        .current-img-wrapper {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #fff4ee;
+            border-radius: 15px;
+        }
+        .current-img { 
+            width: 120px; 
+            height: 120px; 
+            object-fit: cover; 
+            border-radius: 12px; 
+            border: 3px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .update-btn { 
+            background: var(--orange); 
+            color: white; 
+            border: none; 
+            padding: 18px; 
+            width: 100%; 
+            border-radius: 15px; 
+            font-weight: bold; 
+            font-size: 1.1rem;
+            cursor: pointer; 
+            transition: 0.3s; 
+        }
+        .update-btn:hover { 
+            opacity: 0.9; 
+            transform: translateY(-2px); 
+            box-shadow: 0 5px 15px rgba(230, 126, 69, 0.3);
+        }
+        .cancel-link { 
+            display: block; 
+            text-align: center; 
+            margin-top: 15px; 
+            color: #888; 
+            text-decoration: none; 
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .cancel-link:hover { color: #444; }
+    

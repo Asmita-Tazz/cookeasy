@@ -1,0 +1,146 @@
+
+        :root { 
+            --primary: #fe610c;
+             --dark: #111827;
+             --bg: #fdfdfd;
+         }
+        body {
+         font-family: 'Segoe UI', sans-serif;
+         background-color: var(--bg);
+         margin: 0; 
+         color: var(--dark); 
+    }
+        
+        /* Hero Section */
+        .hero {
+            background: #4b5563;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+        font-size: 3rem; 
+        margin-bottom: 10px;
+        font-weight: 800; 
+    }
+
+        .search-container {
+            background: white;
+            padding: 10px;
+            border-radius: 50px;
+            display: flex;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .search-container input {
+        border: none;
+        padding: 15px 25px;
+        flex: 1; 
+        border-radius: 50px; 
+        outline: none; 
+    }
+        .search-btn {
+         background: var(--primary); 
+         color: white;
+         border: none; 
+         padding: 15px 35px;
+         border-radius: 50px;
+         font-weight: 700; 
+         cursor: pointer; 
+    }
+
+        /* Recipe Grid */
+        .content-wrapper { 
+        max-width: 1200px; 
+        margin: 60px auto; 
+        padding: 0 20px; 
+    }
+        .recipe-grid {
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+     }
+
+        .recipe-card-wrapper { 
+            position: relative; 
+    }
+
+        /* Save Button Styling */
+        .fav-btn-modern {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            z-index: 10;
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            padding: 8px 14px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: 0.2s;
+        }
+
+        .fav-btn-modern i { 
+            color: #94a3b8; 
+    }
+        .fav-btn-modern.active {
+             background: var(--primary); color: white;
+     }
+        .fav-btn-modern.active i { 
+            color: white; 
+    }
+
+        .recipe-card { 
+            background: white; 
+            border-radius: 25px; 
+            overflow: hidden; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            text-decoration: none;
+            color: inherit;
+            display: block; 
+
+        }
+        .card-image {
+        width: 100%; 
+        height: 220px;
+        object-fit: cover;
+     }
+        .card-content { 
+            padding: 25px;
+     }
+        .card-tag {
+        color: var(--primary);
+        font-size: 0.8rem; 
+        font-weight: 800; 
+        text-transform: uppercase; 
+        margin-bottom: 5px;
+        display: block; 
+    }
+        .card-title {
+         font-size: 1.2rem;
+         margin: 0 0 10px 0;
+         font-weight: 700; 
+         height: 3rem;
+         overflow: hidden;
+     }
+        .card-footer {
+         display: flex; 
+         justify-content: space-between;
+         color: #64748b;
+         font-size: 0.85rem;
+         padding-top: 10px; 
+         border-top: 1px solid #eee;
+     }

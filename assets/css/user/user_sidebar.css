@@ -1,0 +1,111 @@
+
+    :root {
+        --sidebar-width: 260px;
+        --primary-orange: #fe610c;
+        --sidebar-bg: #ffffff;
+        --text-dark: #1e293b;
+        --text-muted: #64748b;
+        --light-gray: #f8fafc;
+    }
+
+    .sidebar {
+        width: var(--sidebar-width);
+        height: 100vh;
+        background: var(--sidebar-bg);
+        color: var(--text-dark);
+        position: fixed;
+        padding: 20px;
+        left: 0;
+        top: 0;
+        border-right: 1px solid #e2e8f0;
+        display: flex;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    .sidebar-header {
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #f1f5f9;
+        margin-bottom: 20px;
+    }
+
+    .sidebar-header h2 { 
+        color: var(--primary-orange); 
+        font-size: 24px; 
+        font-weight: 800;
+        margin: 0;
+    }
+
+    .menu-container {
+        flex-grow: 1;
+        overflow-y: auto;
+        list-style: none;
+    }
+    
+    .nav-links { list-style: none; padding: 0; }
+    .nav-links li { margin: 4px 0; }
+    
+    .nav-links a {
+        color: var(--text-muted);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 12px 15px;
+        border-radius: 12px;
+        transition: 0.3s;
+        position: relative;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    
+    .nav-links a i { 
+        margin-right: 12px; 
+        width: 20px; 
+        font-size: 18px; 
+        text-align: center;
+    }
+    
+    .nav-links a:hover, 
+    .nav-links a.active {
+        background: var(--primary-orange);
+        color: white;
+    }
+
+    .nav-links a:hover i,
+    .nav-links a.active i { 
+        color: white;
+     }
+
+    .notif-badge {
+        background: #ef4444; 
+        color: white;
+        font-size: 11px;
+        font-weight: bold;
+        padding: 2px 7px;
+        border-radius: 10px;
+        position: absolute;
+        right: 15px;
+        box-shadow: 0 2px 5px rgba(239, 68, 68, 0.3);
+    }
+
+    .logout-btn {
+       margin-top: 20px !important; /* Forces it to stay near the list */
+    background: #fef2f2;
+    color: #ef4444;
+    text-align: center;
+    padding: 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    }
+    
+    .logout-btn:hover { 
+        background: #ef4444; 
+        color: white; 
+    }

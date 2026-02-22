@@ -1,0 +1,51 @@
+ 
+        :root { 
+               --primary: #0ea5e9;
+               --accent: #111827;
+               --bg: #fdfaf6; 
+        }
+        body {
+              font-family: 'Segoe UI', sans-serif;
+              background: var(--bg); 
+              display: flex;
+              justify-content: center;
+              align-items: center; 
+              height: 100vh;
+              margin: 0;
+             }
+        .auth-card {
+             background: white;
+             padding: 40px;
+             border-radius: 20px;
+             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+             width: 100%;
+             max-width: 380px; 
+             text-align: center; 
+        }
+        .otp-input {
+              width: 100%;
+              font-size: 24px; 
+              letter-spacing: 10px; text-align: center; 
+              padding: 12px;
+              border: 2px solid #eee;
+              border-radius: 12px;
+              margin: 20px 0; 
+            }
+        .btn-verify {
+              width: 100%;
+              padding: 14px; 
+              background: var(--primary); 
+              color: white; 
+              border: none;
+              border-radius: 10px;
+              font-weight: bold;
+              cursor: pointer;
+              transition: 0.3s; 
+            }
+        .btn-verify:hover
+         {
+             background: var(--accent); 
+             }
+
+             
+    

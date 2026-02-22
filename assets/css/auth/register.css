@@ -1,0 +1,87 @@
+
+        :root { 
+            --primary: #0ea5e9;
+            --accent: #111827;
+            --white: #ffffff; 
+            --bg: #fdfaf6;
+         }
+        * { 
+             box-sizing: border-box;
+             margin: 0;
+             padding: 0; 
+        }
+        body {
+             font-family: 'Segoe UI', sans-serif; background: var(--bg); 
+             display: flex; 
+             justify-content: center;
+             align-items: center;
+             height: 100vh; 
+            }
+        .auth-container {
+             background: var(--white); 
+             padding: 40px; 
+             border-radius: 20px; 
+             box-shadow: 0 15px 35px rgba(0,0,0,0.1); 
+             width: 100%; max-width: 420px;
+             }
+        .header-area {
+              text-align: center;
+              margin-bottom: 30px;
+             }
+        .header-area h2 { 
+             color: var(--primary);
+             font-size: 28px; 
+        }
+        .form-group { 
+            margin-bottom: 20px; 
+            position: relative;
+         }
+        .form-group label { 
+            display: block;
+            margin-bottom: 8px;
+            color: var(--primary); 
+            font-weight: 600; 
+            font-size: 14px; 
+        }
+        .form-group input { 
+             width: 100%;
+             padding: 12px 15px;
+             border: 2px solid #f1f1f1;
+             border-radius: 10px;
+             font-size: 15px; 
+             transition: 0.3s;
+         }
+        .form-group input:focus {
+             border-color: var(--accent); 
+             outline: none; 
+             background: #fffaf8;
+             }
+        .toggle-password { 
+             position: absolute;
+             right: 15px;
+             top: 38px; 
+             cursor: pointer; 
+             color: #777; 
+        }
+        .btn-submit {
+              width: 100%; 
+              padding: 14px;
+              background: var(--primary);
+              color: white; 
+              border: none;
+              border-radius: 10px;
+              font-weight: bold; 
+              cursor: pointer; 
+              transition: 0.3s;
+             }
+        .btn-submit:hover {
+             background: var(--accent); 
+            }
+        .error-msg { 
+             background: #fee2e2; 
+             color: #dc2626;
+             padding: 12px;
+             border-radius: 8px;
+             margin-bottom: 20px; text-align: center; 
+        }
+        

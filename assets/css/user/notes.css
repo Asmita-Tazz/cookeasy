@@ -1,0 +1,88 @@
+
+        :root { 
+            --primary: #fe610c; 
+            --accent: #111827; 
+            --bg: #f8fafc;
+            --white: #ffffff; 
+        }
+        body { 
+             margin: 0;
+             font-family: 'Plus Jakarta Sans', sans-serif; 
+             background: var(--bg);
+             display: flex;
+         }
+        .main-content {
+              flex: 1;
+              margin-left: 280px;
+              padding: 50px; 
+              min-height: 100vh; 
+            }
+        
+        .page-header h1 {
+              font-family: 'Playfair Display', serif;
+              font-size: 2.2rem; 
+              color: var(--accent); 
+              margin-bottom: 40px;
+             }
+
+        .list-card {
+             background: var(--white);
+             border-radius: 20px; 
+             padding: 30px; 
+             box-shadow: 0 4px 20px rgba(0,0,0,0.05); 
+             margin-bottom: 30px; 
+             border: 1px solid #e2e8f0;
+             }
+        .list-header {
+             display: flex; 
+             justify-content: space-between;
+             align-items: start;
+             border-bottom: 2px solid #f1f5f9; 
+             padding-bottom: 15px;
+             margin-bottom: 20px;
+             }
+        .list-header h2 { 
+            font-size: 1.3rem; 
+            margin: 0; 
+            color: var(--accent);
+         }
+        
+        /* User Note Styling */
+        .note-display {
+             font-size: 0.85rem; 
+             color: #64748b;
+             margin-top: 8px;
+             padding: 10px; 
+             background: #fff4ee;
+             border-radius: 10px;
+             border-left: 4px solid var(--primary); 
+            }
+        
+        .item {
+              display: flex;
+              align-items: center;
+              padding: 12px 0; 
+              border-bottom: 1px solid #f8fafc;
+              cursor: pointer;
+             }
+        .checkbox {
+              background: var(--accent);
+              color: white;
+             }
+        
+        .item-text.strikethrough {
+              text-decoration: line-through;
+              color: #94a3b8;
+             }
+        .qty {
+              font-weight: 700;
+              color: var(--primary);
+              margin-right: 5px;
+             }
+        
+        .btn-delete {
+              color: #ef4444;
+              text-decoration: none; 
+              font-size: 1.1rem; 
+            }
+    
